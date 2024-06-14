@@ -1,0 +1,40 @@
+/* Navbar.css */
+
+@keyframes colorChange {
+  0% {
+    background-color: #333;
+  }
+  25% {
+    background-color: #2a2828;
+  }
+  50% {
+    background-color: #0d0d0d;
+  }
+  75% {
+    background-color: #2e2d2d;
+  }
+  100% {
+    background-color: #080606;
+  }
+}
+
+.navbar {
+  animation: colorChange 30s infinite linear; /* Adjust duration and timing function */
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: top left;
+  }
+  50% {
+    background-position: top right;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
+.animated-background {
+  animation: moveBackground 10s infinite alternate;
+}
+
